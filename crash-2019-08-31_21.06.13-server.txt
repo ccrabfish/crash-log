@@ -1,0 +1,159 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  ForgelinPlugin (Forgelin-1.8.3.jar)
+  Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  MekanismCoremod (Mekanism-1.12.2-9.8.1.383.jar)
+  p455w0rdc0re (p455w0rdslib-1.12.2-2.2.156.jar)
+  EnderCorePlugin (EnderCore-1.12.2-0.5.68-core.jar)
+Contact their authors BEFORE contacting forge
+
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 8/31/19 9:06 PM
+Description: Exception in server tick loop
+
+Missing Mods:
+	unknown : need any: have missing
+
+Missing Mods:
+	unknown : need any: have missing
+
+Missing Mods:
+	unknown : need [1.5.2,): have missing
+
+net.minecraftforge.fml.common.MultipleModsErrored
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:300)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:572)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_221, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1828940032 bytes (1744 MB) / 2058354688 bytes (1963 MB) up to 2058354688 bytes (1963 MB)
+	JVM Flags: 2 total; -Xmx2048M -Xms2048M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2844 92 mods loaded, 92 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                                | Version                  | Source                                             | Signature |
+	|:----- |:--------------------------------- |:------------------------ |:-------------------------------------------------- |:--------- |
+	| L     | minecraft                         | 1.12.2                   | minecraft.jar                                      | None      |
+	| L     | mcp                               | 9.42                     | minecraft.jar                                      | None      |
+	| L     | FML                               | 8.0.99.99                | forge-1.12.2-14.23.5.2844-universal.jar            | None      |
+	| L     | forge                             | 14.23.5.2844             | forge-1.12.2-14.23.5.2844-universal.jar            | None      |
+	| L     | advanced_solar_panels             | 4.3.0                    | Advanced Solar Panels-4.3.0.jar                    | None      |
+	| L     | ae2stuff                          | 0.7.0.4                  | ae2stuff-0.7.0.4-mc1.12.2.jar                      | None      |
+	| L     | ae2wtlib                          | 1.0.30                   | AE2WTLib-1.12.2-1.0.30.jar                         | None      |
+	| L     | appleskin                         | 1.0.9                    | AppleSkin-mc1.12-1.0.9.jar                         | None      |
+	| L     | appliedenergistics2               | rv6-stable-7             | appliedenergistics2-rv6-stable-7.jar               | None      |
+	| L     | appliedintegrations               | 8.0.16                   | AppliedIntegrations-1.12.2-73e76ba5.jar            | None      |
+	| L     | bdlib                             | 1.14.3.12                | bdlib-1.14.3.12-mc1.12.2.jar                       | None      |
+	| L     | betterbuilderswands               | 0.11.1                   | BetterBuildersWands-1.12-0.11.1.245+69d0d70.jar    | None      |
+	| L     | bookshelf                         | 2.3.585                  | Bookshelf-1.12.2-2.3.585.jar                       | None      |
+	| L     | brandonscore                      | 2.4.17                   | BrandonsCore-1.12.2-2.4.17.208-universal.jar       | None      |
+	| L     | chargers                          | 1.2.0.4                  | Chargers-1.12.2-1.2.0.4.jar                        | None      |
+	| L     | chickenchunks                     | 2.4.2.74                 | ChickenChunks-1.12.2-2.4.2.74-universal.jar        | None      |
+	| L     | clickmachine                      | 1.2.0                    | ClickMachine-1.12.2-1.2.0.jar                      | None      |
+	| L     | codechickenlib                    | 3.2.3.357                | CodeChickenLib-1.12.2-3.2.3.357-universal.jar      | None      |
+	| L     | compacter                         | 1.3.0.3                  | compacter-1.3.0.3-mc1.12.2.jar                     | None      |
+	| L     | compactstorage                    | 3.1                      | CompactStorage-3.1-12.jar                          | None      |
+	| L     | conarm                            | 1.2.4                    | conarm-1.12.2-1.2.4.jar                            | None      |
+	| L     | cucumber                          | 1.1.3                    | Cucumber-1.12.2-1.1.3.jar                          | None      |
+	| L     | dimensionaledibles                | 1.3.1                    | DimensionalEdibles-1.12.2-1.3.1.jar                | None      |
+	| L     | draconicadditions                 | 1.8.1                    | Draconic-Additions-1.12.2-1.8.1.24-universal.jar   | None      |
+	| L     | draconicevolution                 | 2.3.24                   | Draconic-Evolution-1.12.2-2.3.24.349-universal.jar | None      |
+	| L     | endercore                         | 1.12.2-0.5.68            | EnderCore-1.12.2-0.5.68.jar                        | None      |
+	| L     | enderio                           | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderiobase                       | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderioconduitsappliedenergistics | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderioconduitsopencomputers      | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderioconduitsrefinedstorage     | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderioconduits                   | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderiointegrationforestry        | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderiointegrationtic             | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderiointegrationticlate         | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderiomachines                   | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | enderiopowertools                 | 5.0.50                   | EnderIO-1.12.2-5.0.50.jar                          | None      |
+	| L     | energyconverters                  | 1.3.0.15                 | energyconverters_1.12.2-1.3.0.15.jar               | None      |
+	| L     | extracells                        | 2.6.2                    | ExtraCells-1.12.2-2.6.2a.jar                       | None      |
+	| L     | extrautils2                       | 1.0                      | extrautils2-1.12-1.9.9.jar                         | None      |
+	| L     | bigreactors                       | 1.12.2-0.4.5.67          | ExtremeReactors-1.12.2-0.4.5.67.jar                | None      |
+	| L     | forgelin                          | 1.8.3                    | Forgelin-1.8.3.jar                                 | None      |
+	| L     | microblockcbe                     | 2.6.2.83                 | ForgeMultipart-1.12.2-2.6.2.83-universal.jar       | None      |
+	| L     | forgemultipartcbe                 | 2.6.2.83                 | ForgeMultipart-1.12.2-2.6.2.83-universal.jar       | None      |
+	| L     | minecraftmultipartcbe             | 2.6.2.83                 | ForgeMultipart-1.12.2-2.6.2.83-universal.jar       | None      |
+	| L     | fortunate                         | 2.4 - MC 1.12.2          | fortunate-1.12.2-2.12.jar                          | None      |
+	| L     | advgenerators                     | 0.9.20.12                | generators-0.9.20.12-mc1.12.2.jar                  | None      |
+	| L     | gravisuite                        | 3.1.1                    | Gravitation Suite-3.1.1.jar                        | None      |
+	| L     | huntingdim                        | 1.0.39                   | HuntingDimension-1.12.2-1.0.39.jar                 | None      |
+	| L     | ic2                               | 2.8.170-ex112            | industrialcraft-2-2.8.170-ex112.jar                | None      |
+	| L     | industrialforegoing               | 1.12.2-1.12.2            | industrialforegoing-1.12.2-1.12.13-237.jar         | None      |
+	| L     | inventorygenerators               | 1.2.2                    | inventorygenerators-1.2.2.jar                      | None      |
+	| L     | inventorytweaks                   | 1.63+release.109.220f184 | InventoryTweaks-1.63.jar                           | None      |
+	| L     | ironchest                         | 1.12.2-7.0.67.844        | ironchest-1.12.2-7.0.72.847.jar                    | None      |
+	| L     | ironjetpacks                      | 1.1.0                    | IronJetpacks-1.12-2-1.1.0.jar                      | None      |
+	| L     | jei                               | 4.15.0.268               | jei_1.12.2-4.15.0.268.jar                          | None      |
+	| L     | jojobadv                          | 1.0.0                    | JojoBAdv-1.0.0-1.12.2.jar                          | None      |
+	| L     | journeymap                        | 1.12.2-5.5.5             | journeymap-1.12.2-5.5.5.jar                        | None      |
+	| L     | jee                               | 1.0.7                    | JustEnoughEnergistics-1.12.2-1.0.7.jar             | None      |
+	| L     | kjlib                             | 1.0.4                    | kjlib-1.0.4.jar                                    | None      |
+	| L     | magicalcrops                      | 1.0.1                    | magicalcrops-1.0.2-MC-1.12.jar                     | None      |
+	| L     | mantle                            | 1.12-1.3.3.55            | Mantle-1.12-1.3.3.55.jar                           | None      |
+	| L     | mcjtylib_ng                       | 3.5.4                    | mcjtylib-1.12-3.5.4.jar                            | None      |
+	| L     | mekanism                          | 1.12.2-9.8.1.383         | Mekanism-1.12.2-9.8.1.383.jar                      | None      |
+	| L     | mekanismgenerators                | 1.12.2-9.8.1.383         | MekanismGenerators-1.12.2-9.8.1.383.jar            | None      |
+	| L     | mekanismtools                     | 1.12.2-9.8.1.383         | MekanismTools-1.12.2-9.8.1.383.jar                 | None      |
+	| L     | powersuits                        | 1.12.2-1.0.46            | ModularPowersuits-1.12.2-1.0.46.jar                | None      |
+	| L     | oreexcavation                     | 1.4.140                  | OreExcavation-1.4.140.jar                          | None      |
+	| L     | p455w0rdslib                      | 2.2.156                  | p455w0rdslib-1.12.2-2.2.156.jar                    | None      |
+	| L     | harvestcraft                      | 1.12.2zb                 | Pam's HarvestCraft 1.12.2zf.jar                    | None      |
+	| L     | patchouli                         | 1.0-20                   | Patchouli-1.0-20.jar                               | None      |
+	| L     | placebo                           | 1.6.0                    | Placebo-1.12.2-1.6.0.jar                           | None      |
+	| L     | redstoneflux                      | 2.1.0                    | RedstoneFlux-1.12-2.1.0.6-universal.jar            | None      |
+	| L     | rftools                           | 7.72                     | rftools-1.12-7.72.jar                              | None      |
+	| L     | rftoolsdim                        | 5.71                     | rftoolsdim-1.12-5.71.jar                           | None      |
+	| L     | rftoolspower                      | 1.2.0                    | rftoolspower-1.12-1.2.0.jar                        | None      |
+	| L     | simplegenerators                  | 1.12.2-2.0.20.2          | simplegenerators-1.12.2-2.0.20.2.jar               | None      |
+	| L     | simplyjetpacks                    | 2.2.13.66                | SimplyJetpacks2-1.12.2-2.2.13.66.jar               | None      |
+	| L     | snad                              | 1.12.1-1.7.09.16a        | Snad-1.12.1-1.7.09.16a.jar                         | None      |
+	| L     | tconstruct                        | 1.12.2-2.12.0.157        | TConstruct-1.12.2-2.12.0.157.jar                   | None      |
+	| L     | teslacorelib                      | 1.0.15                   | tesla-core-lib-1.12.2-1.0.15.jar                   | None      |
+	| L     | teslacorelib_registries           | 1.0.15                   | tesla-core-lib-1.12.2-1.0.15.jar                   | None      |
+	| L     | thaumcraft                        | 6.1.BETA26               | Thaumcraft-1.12.2-6.1.BETA26.jar                   | None      |
+	| L     | tmel                              | 1.12.2-1.4.0.0           | tmel-1.12.2-1.4.0.0.jar                            | None      |
+	| L     | translocators                     | 2.5.2.81                 | Translocators-1.12.2-2.5.2.81-universal.jar        | None      |
+	| L     | twilightforest                    | 3.9.984                  | twilightforest-1.12.2-3.9.984-universal.jar        | None      |
+	| L     | universalmodifiers                | 1.12.2-1.0.16.1          | valkyrielib-1.12.2-2.0.20.1.jar                    | None      |
+	| L     | valkyrielib                       | 1.12.2-2.0.20.1          | valkyrielib-1.12.2-2.0.20.1.jar                    | None      |
+	| L     | wawla                             | 2.5.273                  | Wawla-1.12.2-2.5.273.jar                           | None      |
+	| L     | wct                               | 3.12.93                  | WirelessCraftingTerminal-1.12.2-3.12.93.jar        | None      |
+	| L     | wit                               | 1.0.0                    | WirelessInterfaceTerminal-1.12.2-1.0.0.jar         | None      |
+	| L     | zerocore                          | 1.12.2-0.1.2.8           | zerocore-1.12.2-0.1.2.8.jar                        | None      |
+
+	Loaded coremods (and transformers): 
+ForgelinPlugin (Forgelin-1.8.3.jar)
+  
+Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  invtweaks.forge.asm.ContainerTransformer
+MekanismCoremod (Mekanism-1.12.2-9.8.1.383.jar)
+  mekanism.coremod.KeybindingMigrationHelper
+p455w0rdc0re (p455w0rdslib-1.12.2-2.2.156.jar)
+  p455w0rdslib.asm.ClassTransformer
+EnderCorePlugin (EnderCore-1.12.2-0.5.68-core.jar)
+  com.enderio.core.common.transform.EnderCoreTransformer
+  com.enderio.core.common.transform.SimpleMixinPatcher
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
